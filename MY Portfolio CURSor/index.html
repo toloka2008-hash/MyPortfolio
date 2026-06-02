@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium personal portfolio — Prompt Engineer, Web Creator, AI Solutions Designer. Projects, videos, gallery, and contact." data-i18n-attr="content:meta.description">
+  <meta name="keywords" content="portfolio, prompt engineer, AI, web design, creative developer">
+  <meta name="author" content="[YOUR FULL NAME]">
+  <meta name="theme-color" content="#0a0a12">
+  <meta property="og:title" content="[YOUR FULL NAME] — Portfolio" data-i18n-attr="content:meta.ogTitle">
+  <meta property="og:description" content="Prompt Engineer · Web Creator · AI Solutions Designer" data-i18n-attr="content:meta.ogDescription">
+  <meta property="og:type" content="website">
+  <title>Kamiljanov A'zamjon | Premium Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="loader" id="loader" aria-live="polite" aria-busy="true">
+    <div class="loader-inner">
+      <div class="loader-logo">PORTFOLIO</div>
+      <div class="loader-bar"><span class="loader-progress"></span></div>
+      <p class="loader-text">Loading experience</p>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress-bar"></span></div>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="gradient-orb gradient-orb--1" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--2" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--3" aria-hidden="true"></div>
+  <div class="mouse-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <nav class="nav glass" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">P.</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#videos" data-i18n="nav.videos">Videos</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-lang">
+          <button class="lang-btn" type="button" data-lang-btn="en" aria-label="English">EN</button>
+          <button class="lang-btn" type="button" data-lang-btn="ru" aria-label="Русский">RU</button>
+          <button class="lang-btn" type="button" data-lang-btn="uz" aria-label="O‘zbek">UZ</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="hero" data-parallax>
+      <div class="hero-content">
+        <h1 class="hero-title" aria-label="Portfolio">
+          <span class="hero-title-word" data-text="PORTFOLIO" data-i18n="hero.portfolioWord">PORTFOLIO</span>
+        </h1>
+        <p class="hero-name">Kamiljanov A'zamjon</p>
+        <div class="hero-roles">
+          <span class="hero-roles-label" data-i18n="hero.iAm">I am a</span>
+          <span class="hero-roles-text" id="role-rotator" aria-live="polite">Prompt Engineer</span>
+        </div>
+        <a href="#projects" class="btn btn-primary hero-cta">
+          <span data-i18n="hero.explore">Explore My Work</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag" data-i18n="projects.tag">Work</span>
+          <h2 class="section-title" data-i18n="projects.title">MY PROJECTS</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">Selected websites and digital experiences</p>
+        </header>
+        <div class="projects-grid">
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project1.jpg" alt="Project 1 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Olimpiquest</h3>
+              <p class="project-card-desc">Empowering the Next Generation of Thinkers
+                Our mission is to connect national talent with world-class competitions. We provide the platform, preparation, and pathway for students to excel on the global stage.</p>
+              <div class="project-card-tech">
+                <span>Gemini</span><span>Cursor</span><span>AI</span>
+              </div>
+              <a href="https://olympiquest.vercel.app/#about" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project2.jpg" alt="Project 2 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Knowledge checker</h3>
+              <p class="project-card-desc">A site that checks how well you've mastered the book</p>
+              <div class="project-card-tech">
+                <span>Gemini</span><span>AI</span><span>javascript</span>
+              </div>
+              <a href="https://gemini.google.com/share/af72297db2ea" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project3.jpg" alt="Project 3 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Downloader</h3>
+              <p class="project-card-desc">site that allows you to save videos from social networks</p>
+              <div class="project-card-tech">
+                <span>AI</span><span>Html</span><span>Css</span>
+              </div>
+              <a href="https://gemini.google.com/share/64a95ec71b96" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project4.jpg" alt="Project 4 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Easy english</h3>
+              <p class="project-card-desc">English language learning website</p>
+              <div class="project-card-tech">
+                <span>Html</span><span>Ai</span>
+              </div>
+              <a href="https://gemini.google.com/share/0bad10344e1a" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project5.jpg" alt="Project 5 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Graphic design calculator</h3>
+              <p class="project-card-desc">A website that calculates the cost of graphic design services in Uzbekistan</p>
+              <div class="project-card-tech">
+                <span>Html online editor</span><span>AI</span>
+              </div>
+              <a href="https://onecompiler.com/html/43uhvhrxj" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+          <article class="project-card glass reveal" data-tilt>
+            <div class="project-card-image">
+              <img src="assets/projects/project6.jpg" alt="Project 6 preview" loading="lazy" width="800" height="600">
+              <div class="project-card-overlay"></div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Edu CRM</h3>
+              <p class="project-card-desc">A test site that serves as a guide for education</p>
+              <div class="project-card-tech">
+                <span>Vercel</span><span>AI</span>
+              </div>
+              <a href="https://smartbud.vercel.app/" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer" data-i18n="common.visit">Visit Website</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section class="section videos-section" id="videos">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag" data-i18n="videos.tag">Media</span>
+          <h2 class="section-title" data-i18n="videos.title">MY VIDEOS</h2>
+          <p class="section-subtitle" data-i18n="videos.subtitle">Motion work and creative showcases</p>
+        </header>
+        <div class="videos-grid">
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video1.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project1.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 1"><span></span></button>
+            </div>
+            <h3 class="video-card-title"> Sho'x to'ti</h3>
+          </article>
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video2.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project2.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 2"><span></span></button>
+            </div>
+            <h3 class="video-card-title">Tom & Jerry</h3>
+          </article>
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video3.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project3.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 3"><span></span></button>
+            </div>
+            <h3 class="video-card-title">Lolo & Pepe </h3>
+          </article>
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video4.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project4.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 4"><span></span></button>
+            </div>
+            <h3 class="video-card-title">Asmr video</h3>
+          </article>
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video5.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project5.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 5"><span></span></button>
+            </div>
+            <h3 class="video-card-title">Asmr video 2</h3>
+          </article>
+          <article class="video-card glass reveal" data-video-card>
+            <div class="video-card-media">
+              <video class="video-preview" src="assets/videos/video6.mp4" muted loop playsinline preload="metadata" poster="assets/projects/project6.jpg"></video>
+              <button class="video-play-btn" type="button" aria-label="Play video 6"><span></span></button>
+            </div>
+            <h3 class="video-card-title">Asmr video 3</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag" data-i18n="gallery.tag">Visuals</span>
+          <h2 class="section-title" data-i18n="gallery.title">MY GALLERY</h2>
+          <p class="section-subtitle" data-i18n="gallery.subtitle">Creative imagery and design snapshots</p>
+        </header>
+        <div class="gallery-masonry">
+          <a href="assets/images/image1.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image1.jpg" alt="Gallery image 1" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+          <a href="assets/images/image2.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image2.jpg" alt="Gallery image 2" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+          <a href="assets/images/image3.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image3.jpg" alt="Gallery image 3" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+          <a href="assets/images/image4.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image4.jpg" alt="Gallery image 4" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+          <a href="assets/images/image5.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image5.jpg" alt="Gallery image 5" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+          <a href="assets/images/image6.jpg" class="gallery-item reveal" data-lightbox>
+            <img src="assets/images/image6.jpg" alt="Gallery image 6" loading="lazy" width="800" height="650">
+            <span class="gallery-item-zoom" aria-hidden="true">+</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag" data-i18n="about.tag">Profile</span>
+          <h2 class="section-title" data-i18n="about.title">ABOUT ME</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">Crafting intelligent digital experiences</p>
+        </header>
+        <div class="about-intro glass reveal">
+          <p data-i18n="about.intro">I specialize in bridging creativity and artificial intelligence — designing prompts, workflows, and web experiences that feel effortless yet powerful. From automation pipelines to cinematic interfaces, I build solutions that help brands move faster and think smarter.</p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card glass reveal">
+            <div class="about-card-icon" aria-hidden="true">◆</div>
+            <h3 data-i18n="about.cards.prompt.title">Professional Prompt Engineering</h3>
+            <p data-i18n="about.cards.prompt.desc">Precision-crafted prompts and evaluation frameworks for reliable, scalable AI outputs across products and campaigns.</p>
+          </div>
+          <div class="about-card glass reveal">
+            <div class="about-card-icon" aria-hidden="true">◇</div>
+            <h3 data-i18n="about.cards.workflow.title">AI Workflow Design</h3>
+            <p data-i18n="about.cards.workflow.desc">End-to-end systems that connect tools, data, and human review — optimized for clarity, speed, and quality control.</p>
+          </div>
+          <div class="about-card glass reveal">
+            <div class="about-card-icon" aria-hidden="true">▣</div>
+            <h3 data-i18n="about.cards.web.title">Website Creation</h3>
+            <p data-i18n="about.cards.web.desc">Premium, performance-focused websites with modern UX, responsive layouts, and memorable visual identity.</p>
+          </div>
+          <div class="about-card glass reveal">
+            <div class="about-card-icon" aria-hidden="true">✦</div>
+            <h3 data-i18n="about.cards.creative.title">Creative Problem Solving</h3>
+            <p data-i18n="about.cards.creative.desc">Translating complex requirements into elegant solutions — strategy, design, and execution in one cohesive flow.</p>
+          </div>
+        </div>
+        <div class="about-columns">
+          <div class="timeline glass reveal">
+            <h3 class="about-block-title" data-i18n="about.experience">Experience</h3>
+            <div class="timeline-item">
+              <span class="timeline-year">2025 — 2026 </span>
+              <h4>AI Solutions Designer</h4>
+              <p>Leading prompt systems and client-facing AI products.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2025 — present</span>
+              <h4>Photo and video generator</h4>
+              <p>I have been generating images and videos of high quality and excellent quality.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2025 </span>
+              <h4>Web developer & AI</h4>
+              <p>Writing code for creating AI-based websites and bots and similar tasks</p>
+            </div>
+          </div>
+          <div class="skills-block reveal">
+            <h3 class="about-block-title" data-i18n="about.skills">Skills</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span>Prompt Engineering</span><span data-skill="99">99%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="99"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>AI Workflow Design</span><span data-skill="81">81%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="81"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Web Development</span><span data-skill="75">75%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="75"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Design</span><span data-skill="96">96%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="96"></span></div>
+            </div>
+            <h3 class="about-block-title expertise-title" data-i18n="about.expertise">Expertise</h3>
+            <ul class="expertise-tags">
+              <li>LLM Systems</li>
+              <li>web development</li>
+              <li>Picture generator</li>
+              <li>No-Code</li>
+              <li>Video generator</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag" data-i18n="contact.tag">Connect</span>
+          <h2 class="section-title" data-i18n="contact.title">CONTACT</h2>
+        </header>
+        <div class="contact-hero glass reveal">
+          <p class="contact-tagline" data-i18n="contact.tagline">Let's Build Something Amazing Together</p>
+          <p class="contact-sub" data-i18n="contact.sub">Ready to elevate your brand with AI-powered creativity? Reach out — I'd love to hear about your vision.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:toloka2008@gmail.com" class="contact-link glass">
+            <span class="contact-link-label" data-i18n="contact.email">Email</span>
+            <span class="contact-link-value">toloka2008@gmail.com</span>
+          </a>
+          <a href="https://t.me/ibnKomoliddin" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label" data-i18n="contact.telegram">Telegram</span>
+            <span class="contact-link-value">@ibnKomoliddin</span>
+          </a>
+          <a href="https://instagram.com/" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label" data-i18n="contact.instagram">Instagram</span>
+            <span class="contact-link-value">instagram.com</span>
+          </a>
+          <a href="https://linkedin.com/in/" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label" data-i18n="contact.linkedin">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com</span>
+          </a>
+          <a href="https://github.com/toloka2008-hash" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label" data-i18n="contact.github">GitHub</span>
+            <span class="contact-link-value">@toloka2008-hash</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> <span data-i18n="footer.name">A'zamjon</span>. <span data-i18n="footer.crafted">Crafted with precision.</span></p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-next" type="button" aria-label="Next image">&#8250;</button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="video-modal-close" type="button" aria-label="Close video">&times;</button>
+    <video class="video-modal-player" controls playsinline></video>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
